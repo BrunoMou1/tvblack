@@ -1,0 +1,60 @@
+.funcionalities {
+  padding: 2rem;
+  background-image: url("/src/assets/Home-functions.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  display: flex;
+  justify-content: center;
+
+  .funcionalities__left {
+    width: 50%;
+  }
+
+  .funcionalities__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+  }
+
+  .funcionalities__container {
+    height: 14rem;
+    width: 50%;
+    padding: 1rem;
+    color: var(--white);
+    background-color: var(--black-60);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 10%;
+    box-shadow: 15px 17px 38px -15px rgba(0, 0, 0, 0.73);
+
+    svg {
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      font-weight: 300;
+      color: var(--black-10);
+    }
+  }
+
+  .aside__left {
+    margin-left: 2rem;
+  }
+
+  .aside__right {
+    margin-right: 2rem;
+  }
+}
