@@ -15,7 +15,7 @@ export function Instrucoes() {
       <div className="instrucoes__content">
         <div className="content__item">
           <div className="item__thumb"></div>
-          <div className="item__description">
+          <div className="item__description__instrucoes">
             <h2>Função Favoritos</h2>
             <p>
               Guia do Usuário – Função Favoritos Aprenda a usar a função
@@ -29,7 +29,7 @@ export function Instrucoes() {
         </div>
         <div className="content__item">
           <div className="item__thumb"></div>
-          <div className="item__description">
+          <div className="item__description__instrucoes">
             <h2>Função Favoritos</h2>
             <p>
               Guia do Usuário – Função Favoritos Aprenda a usar a função
@@ -43,7 +43,7 @@ export function Instrucoes() {
         </div>
         <div className="content__item">
           <div className="item__thumb"></div>
-          <div className="item__description">
+          <div className="item__description__instrucoes">
             <h2>Função Favoritos</h2>
             <p>
               Guia do Usuário – Função Favoritos Aprenda a usar a função

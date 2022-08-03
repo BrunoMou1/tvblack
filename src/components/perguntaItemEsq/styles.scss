@@ -1,0 +1,51 @@
+.content__perguntas__esq {
+  margin: 1rem 0;
+  cursor: pointer;
+  width: 90%;
+  padding: 1rem;
+  border-radius: 1.6rem;
+  border: 1px solid var(--black-10);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  transition: height ease 1s;
+
+  .item__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: var(--black-90);
+    }
+
+    .pergunta__arrow {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      color: var(--white);
+      background-color: var(--black-80);
+      border: 1px solid var(--black-10);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .item__description__esq {
+    height: 0;
+    overflow: hidden;
+    transition: height ease 0.3s;
+    
+    p {
+      color: var(--black-80);
+      transition: height ease 0.3s;
+    }
+  }
+
+  .open {
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 300;
+  }
+}

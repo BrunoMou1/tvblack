@@ -7,7 +7,7 @@ export function Contato() {
   return (
     <div className="contato">
       <div className="contato__info">
-        <div class="contato__container">
+        <div className="contato__container">
           <div className="info__title">
             <div></div>
             <h4>CONTATO</h4>

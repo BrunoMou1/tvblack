@@ -1,42 +1,46 @@
-import { useState, useEffect, useRef } from "react";
-import { BsArrowUpShort, BsArrowDownShort } from "react-icons/bs";
+import { useState, useRef } from "react";
+import { gql, useQuery } from "@apollo/client";
 import "./styles.scss";
+import { PerguntaItemEsq } from "../perguntaItemEsq";
+import { PerguntaItemDir } from "../PerguntaItemDir";
+
+const GET_PERGUNTAS_QUERY = gql`
+  query MyQuery {
+    perguntaDireitas {
+      title
+      description {
+        html
+        text
+      }
+    }
+    perguntaEsquerdas {
+      title
+      description {
+        html
+        text
+      }
+    }
+  }
+`;
 
 export function Perguntas() {
-  const [perguntasL, setPerguntasL] = useState([]);
-  const [perguntasR, setPerguntasR] = useState([]);
-  async function loadPerguntas() {
-    const response = await fetch("./perguntas.json");
-    const { sectionLeft, sectionRight } = await response.json();
-    setPerguntasL(sectionLeft);
-    setPerguntasR(sectionRight);
-  }
+  const [clickedEsq, setClickedEsq] = useState("0");
+  const [clickedDir, setClickedDir] = useState("0");
+  const { data } = useQuery(GET_PERGUNTAS_QUERY);
 
-  useEffect(() => {
-    loadPerguntas();
-  }, []);
+  const handleToggleEsq = (index) => {
+    if (clickedEsq === index) {
+      return setClickedEsq("0");
+    }
+    setClickedEsq(index);
+  };
 
-  function setPerguntaAbertoL(pergunta) {
-    const perguntaAtiva = perguntasL.map((item) => {
-      if (item.id === pergunta.id) {
-        return { ...item, aberto: !item.aberto };
-      }
-      return item;
-    });
-
-    setPerguntasL(perguntaAtiva);
-  }
-
-  function setPerguntaAbertoR(pergunta) {
-    const perguntaAtiva = perguntasR.map((item) => {
-      if (item.id === pergunta.id) {
-        return { ...item, aberto: !item.aberto };
-      }
-      return item;
-    });
-
-    setPerguntasR(perguntaAtiva);
-  }
+  const handleToggleDir = (index) => {
+    if (clickedDir === index) {
+      return setClickedDir("0");
+    }
+    setClickedDir(index);
+  };
 
   const contentEl = useRef();
 
@@ -52,68 +56,28 @@ export function Perguntas() {
 
       <div className="perguntas__container">
         <div className="perguntas__content">
-          {perguntasL.map((pergunta) => {
+          {data?.perguntaEsquerdas.map((pergunta, index) => {
             return (
-              <div
-                className="content__item"
-                key={pergunta.id}
-                onClick={() => setPerguntaAbertoL(pergunta)}
-              >
-                <div className="item__header">
-                  <div></div>
-                  <h2>{pergunta.title}</h2>
-                  {pergunta.aberto ? (
-                    <BsArrowUpShort className="pergunta__arrow" />
-                  ) : (
-                    <BsArrowDownShort className="pergunta__arrow" />
-                  )}
-                </div>
-                <div
-                  ref={contentEl}
-                  className={`item__description ${
-                    pergunta.aberto ? "open" : ""
-                  } `}
-                  style={
-                    pergunta.aberto
-                      ? { height: contentEl.current.scrollHeight }
-                      : { height: "0px" }
-                  }
-                  dangerouslySetInnerHTML={{ __html: pergunta.description }}
-                ></div>
-              </div>
+              <PerguntaItemEsq
+                key={index}
+                title={pergunta.title}
+                onToggle={() => handleToggleEsq(index)}
+                active={clickedEsq === index}
+                description={pergunta.description}
+              />
             );
           })}
         </div>
         <div className="perguntas__content">
-          {perguntasR.map((pergunta, index) => {
+          {data?.perguntaDireitas.map((pergunta, index) => {
             return (
-              <div
-                className="content__item"
-                key={pergunta.id}
-                onClick={() => setPerguntaAbertoR(pergunta)}
-              >
-                <div className="item__header">
-                  <div></div>
-                  <h2>{pergunta.title}</h2>
-                  {pergunta.aberto ? (
-                    <BsArrowUpShort className="pergunta__arrow" />
-                  ) : (
-                    <BsArrowDownShort className="pergunta__arrow" />
-                  )}
-                </div>
-                <div
-                  ref={contentEl}
-                  className={`item__description ${
-                    pergunta.aberto ? "open" : ""
-                  } `}
-                  style={
-                    pergunta.aberto
-                      ? { height: contentEl.current.scrollHeight }
-                      : { height: "0px" }
-                  }
-                  dangerouslySetInnerHTML={{ __html: pergunta.description }}
-                ></div>
-              </div>
+              <PerguntaItemDir
+                key={index}
+                onToggle={() => handleToggleDir(index)}
+                title={pergunta.title}
+                active={clickedDir === index}
+                description={pergunta.description}
+              />
             );
           })}
         </div>

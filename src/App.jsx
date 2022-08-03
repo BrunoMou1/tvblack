@@ -1,4 +1,5 @@
-import { Suspense } from "react";
+import { ApolloProvider } from "@apollo/client";
+import { client } from "./lib/apollo";
 import { Contato } from "./components/contato";
 import { Download } from "./components/download";
 import { Footer } from "./components/footer";
@@ -11,18 +12,16 @@ import { Tests } from "./components/tests";
 
 export function App() {
   return (
-    <>
+    <ApolloProvider client={client}>
       <Header />
       <Download />
       <Funcionalities />
       <Tests />
       <Planos />
       <Instrucoes />
-      <Suspense fallback={<div>Loading...</div>}>
-        <Perguntas />
-      </Suspense>
+      <Perguntas />
       <Contato />
       <Footer />
-    </>
+    </ApolloProvider>
   );
 }
