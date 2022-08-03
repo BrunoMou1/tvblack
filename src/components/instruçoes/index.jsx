@@ -1,5 +1,5 @@
+import { BsArrowRight } from "react-icons/bs";
 import "./styles.scss";
-import { BiRightArrowAlt } from "react-icons/bi";
 
 export function Instrucoes() {
   return (
@@ -22,8 +22,8 @@ export function Instrucoes() {
               “FAVORITOS” em seu...
             </p>
             <a href="#">
-              Ler mais
-              <BiRightArrowAlt />
+              VEJA
+              <BsArrowRight size={18} />
             </a>
           </div>
         </div>
@@ -36,8 +36,8 @@ export function Instrucoes() {
               “FAVORITOS” em seu...
             </p>
             <a href="#">
-              Ler mais
-              <BiRightArrowAlt />
+              VEJA
+              <BsArrowRight size={18} />
             </a>
           </div>
         </div>
@@ -50,8 +50,8 @@ export function Instrucoes() {
               “FAVORITOS” em seu...
             </p>
             <a href="#">
-              Ler mais
-              <BiRightArrowAlt />
+              VEJA
+              <BsArrowRight size={18} />
             </a>
           </div>
         </div>

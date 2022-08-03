@@ -1,7 +1,6 @@
-import { MdFileDownload } from "react-icons/md";
+import { BsArrowRightShort } from "react-icons/bs";
 
 import "./styles.scss";
-import { BiRightArrowAlt } from "react-icons/bi";
 
 export function Download() {
   return (
@@ -16,21 +15,17 @@ export function Download() {
           </h1>
           <p>
             Aproveite o melhor aplicativo de TV a partir de sua box ou celular
-            Android.
+            Android. <a href="#">Ler mais</a>
           </p>
-          <a href="#">
-            Ler mais
-            <BiRightArrowAlt />
-          </a>
         </div>
         <div className="download__buttons">
           <button className="download__button button__box">
             <span>TV BOX</span>
-            <MdFileDownload className="button__icon" />
+            <BsArrowRightShort className="button__icon" />
           </button>
           <button className="download__button button__movel">
             <span>MÓVEL</span>
-            <MdFileDownload className="button__icon" />
+            <BsArrowRightShort className="button__icon" />
           </button>
         </div>
       </div>

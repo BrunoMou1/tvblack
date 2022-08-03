@@ -1,4 +1,4 @@
-import { MdFileDownload } from "react-icons/md";
+import { BsArrowRightShort } from "react-icons/bs";
 
 import "./styles.scss";
 
@@ -30,7 +30,7 @@ export function Planos() {
           </div>
           <button className="planos__button">
             <span>TV BOX</span>
-            <MdFileDownload className="button__icon" />
+            <BsArrowRightShort className="button__icon" />
           </button>
         </div>
         <div className="planos__box">
@@ -48,7 +48,7 @@ export function Planos() {
           </div>
           <button className="planos__button">
             <span>TV BOX</span>
-            <MdFileDownload className="button__icon" />
+            <BsArrowRightShort className="button__icon" />
           </button>
         </div>
       </div>

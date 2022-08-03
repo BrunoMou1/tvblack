@@ -17,23 +17,24 @@
   }
 
   .download__text {
-    width: 30%;
+    width: 36%;
 
     h1 {
       margin-bottom: 2rem;
-      font-size: 2rem;
-      font-weight: bold;
+      font-size: 2.4rem;
+      font-weight: 900;
       color: var(--black-80);
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
+      font-weight: 700;
       margin-bottom: 0.5rem;
       color: var(--black-60);
     }
 
     a {
-      display: flex;
+      display: inline-block;
       width: 7rem;
       align-items: center;
       font-size: 1.2rem;
@@ -77,6 +78,7 @@
         height: 2rem;
         align-items: center;
         justify-content: center;
+        padding: 0.2rem;
         border-radius: 50%;
         background-color: var(--white);
         color: var(--black-60);
@@ -88,11 +90,25 @@
     }
 
     .button__box {
-      background-color: var(--black-60);
+      background-image: linear-gradient(
+        to bottom,
+        #1c1c1c,
+        #323232,
+        #4a4a4a,
+        #636363,
+        #7e7d7d
+      );
     }
 
     .button__movel {
-      background-color: var(--black-90);
+      background-image: linear-gradient(
+        to bottom,
+        #1c1c1c,
+        #323232,
+        #4a4a4a,
+        #636363,
+        #7e7d7d
+      );
     }
   }
 }

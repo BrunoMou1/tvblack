@@ -1,4 +1,4 @@
-import { BsArrowRightShort } from "react-icons/bs";
+import { MdKeyboardArrowRight } from "react-icons/md";
 import { FaPlay } from "react-icons/fa";
 
 import "./styles.scss";
@@ -24,7 +24,7 @@ export function Tests() {
           </p>
           <button className="box__button">
             <span>Teste Agora</span>
-            <BsArrowRightShort className="box__icon" />
+            <MdKeyboardArrowRight className="box__icon" />
           </button>
         </div>
         <div className="tests__box">
@@ -35,7 +35,7 @@ export function Tests() {
           </p>
           <button className="box__button">
             <span>Teste Agora</span>
-            <BsArrowRightShort className="box__icon" />
+            <MdKeyboardArrowRight className="box__icon" />
           </button>
         </div>
         <div className="tests__box">
@@ -46,7 +46,7 @@ export function Tests() {
           </p>
           <button className="box__button">
             <span>Teste Agora</span>
-            <BsArrowRightShort className="box__icon" />
+            <MdKeyboardArrowRight className="box__icon" />
           </button>
         </div>
       </div>

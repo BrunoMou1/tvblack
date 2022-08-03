@@ -4,7 +4,9 @@ export function Header() {
   return (
     <>
       <div className="header">
-        <div className="header__logo"></div>
+        <div className="header__logo">
+          <img src="/src/assets/logo.png" alt="logo" />
+        </div>
         <div className="header__menu">
           <ul>
             <li>
