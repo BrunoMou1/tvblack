@@ -16,7 +16,8 @@ export function Planos() {
       </div>
       <div className="planos__boxs">
         <div className="planos__box">
-          <div className="plano__standart">Plano Mensal</div>
+          <div className="plano__standart">PADRÃO MENSAL</div>
+          <img src="/src/assets/logo.png" alt="logo" />
           <h4 className="box__title">30 DIAS</h4>
           <p className="box__subtitle">Plano Anuel 30 dias</p>
           <div className="box__divider">.</div>
@@ -29,12 +30,13 @@ export function Planos() {
             </ul>
           </div>
           <button className="planos__button">
-            <span>TV BOX</span>
+            <span>ESCOLHER</span>
             <BsArrowRightShort className="button__icon" />
           </button>
         </div>
         <div className="planos__box">
-          <div className="plano__standart">Plano Anual</div>
+          <div className="plano__standart">PADRÃO ANUAL</div>
+          <img src="/src/assets/logo.png" alt="logo" />
           <h4 className="box__title">365 DIAS</h4>
           <p className="box__subtitle">Plano Anuel 365 dias</p>
           <div className="box__divider">.</div>
@@ -47,7 +49,45 @@ export function Planos() {
             </ul>
           </div>
           <button className="planos__button">
-            <span>TV BOX</span>
+            <span>ESCOLHER</span>
+            <BsArrowRightShort className="button__icon" />
+          </button>
+        </div>
+        <div className="planos__box">
+          <div className="plano__standart">PREMIUM MENSAL</div>
+          <img src="/src/assets/logo.png" alt="logo" />
+          <h4 className="box__title">365 DIAS</h4>
+          <p className="box__subtitle">Plano Anuel 365 dias</p>
+          <div className="box__divider">.</div>
+          <div className="box__content">
+            <ul>
+              <li>• Conteúdo televisivo</li>
+              <li>• App para smartphone Android</li>
+              <li>• Playback e UHD</li>
+              <li>• 7 dias grátis com o Blue App (para novos usuários)</li>
+            </ul>
+          </div>
+          <button className="planos__button">
+            <span>ESCOLHER</span>
+            <BsArrowRightShort className="button__icon" />
+          </button>
+        </div>
+        <div className="planos__box">
+          <div className="plano__standart">PREMIUM ANUAL</div>
+          <img src="/src/assets/logo.png" alt="logo" />
+          <h4 className="box__title">365 DIAS</h4>
+          <p className="box__subtitle">Plano Anuel 365 dias</p>
+          <div className="box__divider">.</div>
+          <div className="box__content">
+            <ul>
+              <li>• Conteúdo televisivo</li>
+              <li>• App para smartphone Android</li>
+              <li>• Playback e UHD</li>
+              <li>• 7 dias grátis com o Blue App (para novos usuários)</li>
+            </ul>
+          </div>
+          <button className="planos__button">
+            <span>ESCOLHER</span>
             <BsArrowRightShort className="button__icon" />
           </button>
         </div>

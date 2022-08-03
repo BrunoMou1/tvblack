@@ -53,8 +53,8 @@
     width: 100%;
 
     .box__divider {
-      margin: 2rem 0;
-      width: 100%;
+      margin: 2rem auto;
+      width: 80%;
       height: 1px;
       color: var(--white);
       background-color: var(--black-20);
@@ -63,44 +63,52 @@
     .planos__box {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 32%;
-      height: 32rem;
+      width: 23%;
+      padding: 1rem 0;
       border-radius: 1rem;
-      border: 1px solid var(--black-90);
       background-color: var(--white);
-      padding: 2rem 1.5rem;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 15px 17px 38px -15px rgba(0, 0, 0, 0.73);
+
+      img {
+        width: 50%;
+        margin: -10% auto;
+        height: auto;
+      }
 
       .plano__standart {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 60%;
+        text-align: left;
         height: 100%;
-        margin-top: -12%;
-        margin-bottom: 2rem;
         color: var(--white);
-        border-radius: 1rem;
+        border-radius: 0 1rem 1rem 0;
         border: 1px solid var(--black-90);
         background-color: var(--black-40);
         box-shadow: 15px 17px 38px -15px rgba(0, 0, 0, 0.73);
-        padding: 1rem 1.5rem;
+        padding: 0.5rem 0rem;
       }
 
       .box__title {
+        margin: 0 1rem;
+        text-align: center;
         font-size: 2.5rem;
         font-weight: bold;
         color: var(--black-60);
       }
 
       .box__subtitle {
+        text-align: center;
+        margin: 0 1rem;
         font-size: 1rem;
         font-weight: 500;
         color: var(--black-20);
       }
 
       .box__content {
+        padding: 0 1rem;
         margin-top: 1rem;
         ul {
           text-align: center;
@@ -119,11 +127,12 @@
 
       .planos__button {
         border-radius: 1.5rem;
+        width: 60%;
         border: none;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 1.5rem;
+        margin: 1rem auto;
         cursor: pointer;
         background-color: var(--black-80);
         box-shadow: 15px 17px 38px -15px rgba(0, 0, 0, 0.73);
@@ -150,6 +159,10 @@
             padding: 0.5rem;
           }
         }
+      }
+
+      &:hover {
+        transform: translateY(-0.5rem);
       }
     }
   }
