@@ -26,6 +26,7 @@
     align-items: left;
     margin-bottom: 10%;
     box-shadow: 15px 17px 38px -15px rgba(0, 0, 0, 0.73);
+    transition: all 0.3s ease-in-out;
 
     svg {
       margin-left: 1rem;
@@ -43,6 +44,10 @@
       margin-bottom: 1rem;
       font-weight: 300;
       color: var(--white);
+    }
+
+    &:hover {
+      background-color: var(--black-80);
     }
   }
 
