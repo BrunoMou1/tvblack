@@ -1,5 +1,5 @@
 import { BsArrowRightShort } from "react-icons/bs";
-
+import Logo from "/src/assets/logo.png";
 import "./styles.scss";
 
 export function Planos() {
@@ -17,7 +17,7 @@ export function Planos() {
       <div className="planos__boxs">
         <div className="planos__box">
           <div className="plano__standart">PADRÃO MENSAL</div>
-          {/* <img src="/src/assets/logo.png" alt="logo" /> */}
+          <img src={Logo} alt="logo" />
           <h4 className="box__title">30 DIAS</h4>
           <p className="box__subtitle">Plano Mensal 30 dias</p>
           <div className="box__divider">.</div>
@@ -36,7 +36,7 @@ export function Planos() {
         </div>
         <div className="planos__box">
           <div className="plano__standart">PADRÃO ANUAL</div>
-          {/* <img src="/src/assets/logo.png" alt="logo" /> */}
+          <img src={Logo} alt="logo" />
           <h4 className="box__title">365 DIAS</h4>
           <p className="box__subtitle">Plano Anual 365 dias</p>
           <div className="box__divider">.</div>
@@ -55,7 +55,7 @@ export function Planos() {
         </div>
         <div className="planos__box">
           <div className="plano__standart">PREMIUM MENSAL</div>
-          {/* <img src="/src/assets/logo.png" alt="logo" /> */}
+          <img src={Logo} alt="logo" />
           <h4 className="box__title">365 DIAS</h4>
           <p className="box__subtitle">Plano Mensal 30 dias</p>
           <div className="box__divider">.</div>
@@ -74,7 +74,7 @@ export function Planos() {
         </div>
         <div className="planos__box">
           <div className="plano__standart">PREMIUM ANUAL</div>
-          {/* <img src="/src/assets/logo.png" alt="logo" /> */}
+          <img src={Logo} alt="logo" />
           <h4 className="box__title">365 DIAS</h4>
           <p className="box__subtitle">Plano Anual 365 dias</p>
           <div className="box__divider">.</div>

@@ -1,3 +1,4 @@
+import Logo from "/src/assets/logo.png";
 import "./styles.scss";
 
 export function Header() {
@@ -5,7 +6,7 @@ export function Header() {
     <>
       <div className="header">
         <div className="header__logo">
-          <img src="/src/assets/logo.png" alt="logo" />
+          <img src={Logo} alt="logo" />
         </div>
         <div className="header__menu">
           <ul>

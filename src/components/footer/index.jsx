@@ -1,10 +1,11 @@
+import Logo from "/src/assets/logo.png";
 import "./styles.scss";
 
 export function Footer() {
   return (
     <div className="footer">
       <div className="footer__logo">
-        <img src="/src/assets/logo.png" alt="logo" />
+        <img src={Logo} alt="logo" />
       </div>
       <div className="footer__atalhos">
         <div className="atalhos__left">

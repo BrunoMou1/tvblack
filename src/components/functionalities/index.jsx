@@ -4,6 +4,7 @@ import { FaRegGem } from "react-icons/fa";
 import { BiCalendar } from "react-icons/bi";
 import { FaChromecast } from "react-icons/fa";
 import { FaStream } from "react-icons/fa";
+import Functions from "/src/assets/Home-functions.png"
 
 import "./styles.scss";
 
@@ -30,7 +31,7 @@ export function Funcionalities() {
           </p>
         </div>
       </div>
-      <img src="/src/assets/Home-functions.png" alt="funcionalities" />
+      <img src={Functions} alt="funcionalities" />
       <div className="funcionalities__right">
         <div className="funcionalities__container aside__right">
           <BiCalendar size={40} />
