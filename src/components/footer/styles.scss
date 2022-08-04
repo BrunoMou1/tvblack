@@ -1,10 +1,10 @@
 .footer {
   display: flex;
   justify-content: space-between;
+  box-shadow: 0px -5px 39px 1px rgba(0,0,0,0.73);
   align-items: center;
   padding: 0rem 2rem;
   margin-top: 10%;
-  background-color: var(--black-60);
   color: var(--black-10);
 
   .footer__logo {
