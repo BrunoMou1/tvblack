@@ -1,7 +1,27 @@
+import { useState, useEffect } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import "./styles.scss";
 
 export function Instrucoes() {
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  function getWindowSize() {
+    const { innerWidth, innerHeight } = window;
+    return { innerWidth, innerHeight };
+  }
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
   return (
     <div className="instrucoes">
       <div className="instrucoes__title">
@@ -21,10 +41,12 @@ export function Instrucoes() {
               Guia do Usuário – Função Favoritos Aprenda a usar a função
               “FAVORITOS” em seu...
             </p>
-            <a href="#">
-              VEJA
-              <BsArrowRight size={18} />
-            </a>
+            {windowSize.innerWidth > 768 && (
+              <a href="#">
+                VEJA
+                <BsArrowRight size={18} />
+              </a>
+            )}
           </div>
         </div>
         <div className="content__item">
@@ -35,10 +57,12 @@ export function Instrucoes() {
               Guia do Usuário – Função Favoritos Aprenda a usar a função
               “FAVORITOS” em seu...
             </p>
-            <a href="#">
-              VEJA
-              <BsArrowRight size={18} />
-            </a>
+            {windowSize.innerWidth > 768 && (
+              <a href="#">
+                VEJA
+                <BsArrowRight size={18} />
+              </a>
+            )}
           </div>
         </div>
         <div className="content__item">
@@ -49,10 +73,12 @@ export function Instrucoes() {
               Guia do Usuário – Função Favoritos Aprenda a usar a função
               “FAVORITOS” em seu...
             </p>
-            <a href="#">
-              VEJA
-              <BsArrowRight size={18} />
-            </a>
+            {windowSize.innerWidth > 768 && (
+              <a href="#">
+                VEJA
+                <BsArrowRight size={18} />
+              </a>
+            )}
           </div>
         </div>
       </div>
