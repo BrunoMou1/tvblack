@@ -45,12 +45,14 @@
     justify-content: space-between;
     margin: 5rem 0;
     width: 100%;
+    
 
     .content__item {
       width: 30%;
       height: 26rem;
       border-radius: 1rem;
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      background-color: #111213;
 
       .item__thumb {
         width: 100%;
