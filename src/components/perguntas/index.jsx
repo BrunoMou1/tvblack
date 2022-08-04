@@ -42,16 +42,14 @@ export function Perguntas() {
     setClickedDir(index);
   };
 
-  const contentEl = useRef();
-
   return (
     <div className="perguntas">
       <div className="perguntas__title">
         <div></div>
-        <h4>PERGUNTAS FREQUENTES</h4>
+        <h4>FAQ</h4>
       </div>
       <div className="perguntas__subtitle">
-        <h1>Leia as Perguntas Frequentes</h1>
+        <h1>Leia As Perguntas Frequentes</h1>
       </div>
 
       <div className="perguntas__container">
