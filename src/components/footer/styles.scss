@@ -2,13 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 0rem 2rem;
   margin-top: 10%;
   background-color: var(--black-60);
   color: var(--black-10);
 
   .footer__logo {
-    width: 30%;
+    width: 20%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .footer__atalhos {

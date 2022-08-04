@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <div className="footer">
       <div className="footer__logo">
-        <img src="" alt="logo" />
+        <img src="/src/assets/logo.png" alt="logo" />
       </div>
       <div className="footer__atalhos">
         <div className="atalhos__left">
