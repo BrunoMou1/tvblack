@@ -71,7 +71,6 @@
         .email {
           display: flex;
           margin-top: 2rem;
-          width: 100%;
           align-items: center;
           font-size: 1.6rem;
           font-weight: 500;
@@ -189,7 +188,7 @@
           color: var(--black-60);
         }
       }
-      
+
       .form__button {
         display: flex;
         align-items: center;
@@ -205,6 +204,51 @@
 
         &:hover {
           background-color: var(--black-10);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .contato {
+    flex-direction: column;
+    padding: 0 1rem;
+    text-align: center;
+
+    .contato__info {
+      width: 100%;
+      margin-left: 0;
+
+      .contato__container {
+        padding: 5rem 0.5rem;
+
+        .info__title {
+          justify-content: center;
+        }
+
+        .revedendores,
+        .youtube,
+        .email {
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+    }
+
+    .contato__form {
+      width: 100%;
+      margin-top: 4rem;
+      margin-left: 0;
+
+      .form__title {
+        justify-content: center;
+      }
+
+      .form__content {
+        .form__button {
+          width: 60%;
+          margin-top: 2rem;
         }
       }
     }

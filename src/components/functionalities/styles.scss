@@ -1,26 +1,23 @@
 .funcionalities {
   padding: 2rem;
-  background-image: url("/src/assets/Home-functions.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 40%;
   display: flex;
   justify-content: center;
+  align-items: center;
 
-  .funcionalities__left {
-    width: 50%;
+  img {
+    width: 34%;
+    height: 34%;
   }
 
   .funcionalities__right {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 50%;
   }
 
   .funcionalities__container {
     height: 14rem;
-    width: 50%;
+    width: 100%;
     padding: 1rem;
     border-radius: 0.5rem;
     display: flex;
@@ -54,5 +51,33 @@
 
   .aside__right {
     margin-right: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .funcionalities {
+    flex-direction: column;
+
+    img {
+      width: 70%;
+      height: 70%;
+    }
+
+    .funcionalities__left,
+    .funcionalities__right {
+      width: 100%;
+
+      .funcionalities__container {
+        width: 100%;
+      }
+    }
+
+    .aside__left {
+      margin-left: 0rem;
+    }
+
+    .aside__right {
+      margin-right: 0rem;
+    }
   }
 }

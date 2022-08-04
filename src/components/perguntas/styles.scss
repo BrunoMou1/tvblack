@@ -45,3 +45,19 @@
     }
   }
 }
+
+@media (max-width: 920px) {
+  .perguntas {
+    padding: 0 1rem;
+    text-align: center;
+
+    .perguntas__title {
+      justify-content: center;
+    }
+
+    .perguntas__container {
+      flex-direction: column;
+    }
+
+  }
+}

@@ -30,6 +30,7 @@ export function Funcionalities() {
           </p>
         </div>
       </div>
+      <img src="/src/assets/Home-functions.png" alt="funcionalities" />
       <div className="funcionalities__right">
         <div className="funcionalities__container aside__right">
           <BiCalendar size={40} />

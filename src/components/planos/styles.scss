@@ -134,6 +134,7 @@
       .planos__button {
         border-radius: 1.5rem;
         width: 60%;
+        max-width: 200px;
         border: none;
         display: flex;
         align-items: center;
@@ -176,6 +177,44 @@
 
       &:hover {
         transform: translateY(-0.5rem);
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .planos {
+    padding: 0 2rem;
+    margin: 5rem 0;
+
+    .planos__boxs {
+      flex-direction: column;
+      gap: 4rem;
+      width: 70%;
+
+      .planos__box {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .planos {
+    padding: 0 1rem;
+    margin: 5rem 0;
+
+    .planos__boxs {
+      flex-direction: column;
+      gap: 4rem;
+      width: 96%;
+
+      .planos__box {
+        width: 100%;
+
+        .planos__button {
+          width: 98%;
+        }
       }
     }
   }
