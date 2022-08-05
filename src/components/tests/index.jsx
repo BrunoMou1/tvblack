@@ -92,7 +92,7 @@ export function Tests() {
         </div>
       )}
       <div className="tests__video">
-        <h1>VEJA COMO É FÁCIL USAR O BLUE TV</h1>
+        <h1>VEJA COMO É FÁCIL USAR O BLACK TV</h1>
         <button className="video__button">
           <FaPlay className="video__icon" />
         </button>

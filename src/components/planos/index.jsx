@@ -28,7 +28,7 @@ export function Planos() {
               <li>• App para smart Android TV</li>
               <li>• App para smartphone Android</li>
               <li>• Playback e UHD</li>
-              <li>• 7 dias grátis com o Blue App (para novos usuários)</li>
+              <li>• 7 dias grátis com o Black App (para novos usuários)</li>
             </ul>
           </div>
           <button className="planos__button">
@@ -49,7 +49,7 @@ export function Planos() {
               <li>• App para smart Android TV</li>
               <li>• App para smartphone Android</li>
               <li>• Playback e UHD</li>
-              <li>• 7 dias grátis com o Blue App (para novos usuários)</li>
+              <li>• 7 dias grátis com o Black App (para novos usuários)</li>
             </ul>
           </div>
           <button className="planos__button">
@@ -71,7 +71,7 @@ export function Planos() {
               <li>• App para smartphone Android</li>
               <li>• Playback e UHD</li>
               <li>• Dois dispositivos simultaneamente</li>
-              <li>• 7 dias grátis com o Blue App (para novos usuários)</li>
+              <li>• 7 dias grátis com o Black App (para novos usuários)</li>
             </ul>
           </div>
           <button className="planos__button">
@@ -93,7 +93,7 @@ export function Planos() {
               <li>• App para smartphone Android</li>
               <li>• Playback e UHD</li>
               <li>• Dois dispositivos simultaneamente</li>
-              <li>• 7 dias grátis com o Blue App (para novos usuários)</li>
+              <li>• 7 dias grátis com o Black App (para novos usuários)</li>
             </ul>
           </div>
           <button className="planos__button">

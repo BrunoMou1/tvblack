@@ -26,7 +26,7 @@ export function Instrucoes() {
     <div className="instrucoes">
       <div className="instrucoes__title">
         <div></div>
-        <h4>COMO USAR BLUE TV</h4>
+        <h4>COMO USAR BLACK TV</h4>
       </div>
       <div className="instrucoes__subtitle">
         <h1>Como funciona o BlackTV?</h1>
