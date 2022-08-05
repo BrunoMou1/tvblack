@@ -91,8 +91,8 @@ export function Planos() {
               <li>• App para TV BOX</li>
               <li>• App para smart Android TV</li>
               <li>• App para smartphone Android</li>
-              <li>• Dois dispositivos simultaneamente</li>
               <li>• Playback e UHD</li>
+              <li>• Dois dispositivos simultaneamente</li>
               <li>• 7 dias grátis com o Blue App (para novos usuários)</li>
             </ul>
           </div>
