@@ -23,6 +23,8 @@ export function Planos() {
           <div className="box__divider">.</div>
           <div className="box__content">
             <ul>
+              <li>• App para TV BOX</li>
+              <li>• App para smart Android TV</li>
               <li>• Conteúdo televisivo</li>
               <li>• App para smartphone Android</li>
               <li>• Playback e UHD</li>
@@ -42,6 +44,8 @@ export function Planos() {
           <div className="box__divider">.</div>
           <div className="box__content">
             <ul>
+              <li>• App para TV BOX</li>
+              <li>• App para smart Android TV</li>
               <li>• Conteúdo televisivo</li>
               <li>• App para smartphone Android</li>
               <li>• Playback e UHD</li>
@@ -61,6 +65,8 @@ export function Planos() {
           <div className="box__divider">.</div>
           <div className="box__content">
             <ul>
+              <li>• App para TV BOX</li>
+              <li>• App para smart Android TV</li>
               <li>• Conteúdo televisivo</li>
               <li>• App para smartphone Android</li>
               <li>• Playback e UHD</li>
@@ -81,6 +87,8 @@ export function Planos() {
           <div className="box__divider">.</div>
           <div className="box__content">
             <ul>
+              <li>• App para TV BOX</li>
+              <li>• App para smart Android TV</li>
               <li>• Conteúdo televisivo</li>
               <li>• App para smartphone Android</li>
               <li>• Dois dispositivos simultaneamente</li>
