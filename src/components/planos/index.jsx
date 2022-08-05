@@ -16,7 +16,7 @@ export function Planos() {
       </div>
       <div className="planos__boxs">
         <div className="planos__box">
-          <div className="plano__standart">PADRÃO MENSAL</div>
+          <div className="plano__standart">BLACK MENSAL</div>
           <img src={Logo} alt="logo" />
           <h4 className="box__title">30 DIAS</h4>
           <p className="box__subtitle">Plano Mensal 30 dias</p>
@@ -35,7 +35,7 @@ export function Planos() {
           </button>
         </div>
         <div className="planos__box">
-          <div className="plano__standart">PADRÃO ANUAL</div>
+          <div className="plano__standart">BLACK ANUAL</div>
           <img src={Logo} alt="logo" />
           <h4 className="box__title">365 DIAS</h4>
           <p className="box__subtitle">Plano Anual 365 dias</p>
@@ -54,7 +54,7 @@ export function Planos() {
           </button>
         </div>
         <div className="planos__box">
-          <div className="plano__standart">PREMIUM MENSAL</div>
+          <div className="plano__standart">DUAL BLACK MENSAL</div>
           <img src={Logo} alt="logo" />
           <h4 className="box__title">365 DIAS</h4>
           <p className="box__subtitle">Plano Mensal 30 dias</p>
@@ -64,6 +64,7 @@ export function Planos() {
               <li>• Conteúdo televisivo</li>
               <li>• App para smartphone Android</li>
               <li>• Playback e UHD</li>
+              <li>• Dois dispositivos simultaneamente</li>
               <li>• 7 dias grátis com o Blue App (para novos usuários)</li>
             </ul>
           </div>
@@ -73,7 +74,7 @@ export function Planos() {
           </button>
         </div>
         <div className="planos__box">
-          <div className="plano__standart">PREMIUM ANUAL</div>
+          <div className="plano__standart">DUAL BLACK ANUAL</div>
           <img src={Logo} alt="logo" />
           <h4 className="box__title">365 DIAS</h4>
           <p className="box__subtitle">Plano Anual 365 dias</p>
@@ -82,6 +83,7 @@ export function Planos() {
             <ul>
               <li>• Conteúdo televisivo</li>
               <li>• App para smartphone Android</li>
+              <li>• Dois dispositivos simultaneamente</li>
               <li>• Playback e UHD</li>
               <li>• 7 dias grátis com o Blue App (para novos usuários)</li>
             </ul>
