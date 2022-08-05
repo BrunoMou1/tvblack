@@ -4,7 +4,7 @@ import { FaRegGem } from "react-icons/fa";
 import { BiCalendar } from "react-icons/bi";
 import { FaChromecast } from "react-icons/fa";
 import { FaStream } from "react-icons/fa";
-import Functions from "/src/assets/Home-functions.png"
+import Functions from "/src/assets/Functions.jpeg"
 
 import "./styles.scss";
 
