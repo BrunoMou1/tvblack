@@ -60,7 +60,7 @@ export function Planos() {
         <div className="planos__box">
           <div className="plano__standart">DUAL BLACK MENSAL</div>
           <img src={Logo} alt="logo" />
-          <h4 className="box__title">365 DIAS</h4>
+          <h4 className="box__title">30 DIAS</h4>
           <p className="box__subtitle">Plano Mensal 30 dias</p>
           <div className="box__divider">.</div>
           <div className="box__content">
