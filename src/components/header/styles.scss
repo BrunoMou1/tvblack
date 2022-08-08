@@ -95,9 +95,26 @@
         font-weight: bold;
         font-size: 1rem;
         cursor: pointer;
-        transition: background-color 0.2s;
+
+        &:after {
+          background: #fff;
+          content: "";
+          height: 155px;
+          left: -75px;
+          opacity: 0.2;
+          position: absolute;
+          top: -50px;
+          transform: rotate(35deg);
+          transition: all 5550ms cubic-bezier(0.19, 1, 0.22, 1);
+          width: 50px;
+          z-index: -10;
+        }
+
         &:hover {
-          background-color: var(--black-60);
+          &:after {
+            left: 120%;
+            transition: all 5550ms cubic-bezier(0.19, 1, 0.22, 1);
+          }
         }
       }
     }
@@ -126,7 +143,6 @@
         }
       }
     }
-
   }
 }
 
